@@ -25,6 +25,11 @@ def process():
             lines=line.split('-')
             students_name= lines[0]
             students_gwa= float(lines [1])
+            
+            #checks if the gwa is the highest and replaces the current highest value in the variable"
+            if students_gwa< highest_gwa:
+                highest_gwa=students_gwa
+                highest_student=students_name
     #checks if the gwa is higher than the current highest gwa and replaces the values within the variables
 
 
