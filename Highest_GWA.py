@@ -12,9 +12,14 @@ from asciimatics.scene import Scene
 from asciimatics.screen import Screen
 
 #Creates reference for printing
+highest_line=''
+
 #Creates Method For Printing student with highest gwa
-#opens students_gwa.txt
-#checks if the gwa is higher than the current highest gwa and replaces the values within the variables
+def process():
+
+    #opens students_gwa.txt
+    with open ("students_gwa.txt") as initial_file:
+    #checks if the gwa is higher than the current highest gwa and replaces the values within the variables
 
 
 #calls the method
