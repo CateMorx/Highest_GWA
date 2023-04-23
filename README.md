@@ -2,6 +2,8 @@
 Outputs the name of the student who got the highest GWA. 
 This is a Python program that reads a file containing the name of 20 students together with their GWA. The program outputs the name of the student who got the highest GWA (including the GWA).
 
+![Alt Text](Highest_GWA.gif)
+
 # Needed Packages to Install
 Asciimatics
 
