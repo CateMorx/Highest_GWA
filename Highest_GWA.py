@@ -42,4 +42,15 @@ def process():
 
 
 #calls the method
+process()
+
 #Prints and animates the final output
+def input(screen):
+    effects = [
+        Cycle(screen,
+              FigletText(highest_line, font= 'big'),
+              int(screen.height / 2-8)),
+        Stars(screen, 200)
+    ]
+    screen.play([Scene(effects,500)])
+Screen.wrapper(input)
