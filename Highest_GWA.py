@@ -16,6 +16,12 @@ highest_line=''
 
 #Creates Method For Printing student with highest gwa
 def process():
+    #Allows other def to access the variable
+    global highest_line
+
+    #sets the lowest value for gwa
+    highest_gwa=5
+    highest_student=''
 
     #opens students_gwa.txt
     with open ("students_gwa.txt") as initial_file:
@@ -25,12 +31,14 @@ def process():
             lines=line.split('-')
             students_name= lines[0]
             students_gwa= float(lines [1])
-            
-            #checks if the gwa is the highest and replaces the current highest value in the variable"
+
+            #checks if the gwa is higher than the current highest gwa and replaces the values within the variables
             if students_gwa< highest_gwa:
                 highest_gwa=students_gwa
                 highest_student=students_name
-    #checks if the gwa is higher than the current highest gwa and replaces the values within the variables
+
+    #Joins all the variables together
+    highest_line="The student with the Highest Score: \n" + highest_student + " GWA OF : {:.2f}".format(highest_gwa)
 
 
 #calls the method
