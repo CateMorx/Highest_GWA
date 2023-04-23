@@ -19,6 +19,12 @@ def process():
 
     #opens students_gwa.txt
     with open ("students_gwa.txt") as initial_file:
+
+        #separates each line into name and gwa
+        for line in initial_file:
+            lines=line.split('-')
+            students_name= lines[0]
+            students_gwa= float(lines [1])
     #checks if the gwa is higher than the current highest gwa and replaces the values within the variables
 
 
