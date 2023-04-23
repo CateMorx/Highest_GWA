@@ -6,6 +6,11 @@
 
 
 #Imports necessary elements
+from asciimatics.effects import Cycle, Stars
+from asciimatics.renderers import FigletText
+from asciimatics.scene import Scene
+from asciimatics.screen import Screen
+
 #Creates reference for printing
 #Creates Method For Printing student with highest gwa
 #opens students_gwa.txt
